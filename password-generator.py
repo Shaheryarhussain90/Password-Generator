@@ -30,14 +30,14 @@ def generate_password(length, use_digits, use_special):
 # )
 
 
-st.title("password Grenrator")
+st.title("password Generator")
 length = st.slider("select password lengt", min_value=6, max_value=32, value=12)
 
 use_digits = st.checkbox("Include Digit")
 
 use_special = st.checkbox("Include special characters")
 
-if st.button("Generae Password"):
+if st.button("Generate Password"):
     password = generate_password(length, use_digits, use_special)
     st.write(f"Generated Password:`{password}`")
 
